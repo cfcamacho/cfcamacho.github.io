@@ -202,6 +202,26 @@ strong { color: var(--navy); }
   padding: 14px;
   line-height: 1.6;
 }
+.cert-list { display: grid; gap: 0; margin: 0 0 8px; }
+.cert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 10px 14px;
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+.cert-item:first-child { border-top: 1px solid var(--line); }
+.cert-item a {
+  color: var(--navy);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(184, 149, 42, .6);
+}
+.cert-item a:hover { color: var(--navy-mid); }
+.cert-item .tag { color: var(--muted); font-size: 13px; font-style: italic; }
 .muted { color: var(--slate); font-style: italic; }
 footer {
   background: var(--navy-deep);
